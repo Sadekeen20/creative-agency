@@ -1,0 +1,13 @@
+.card-style{
+    border-radius:9px;
+    opacity: .8;
+}
+.card-style:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+.card-style img{
+    height:50px;
+    width:50px;
+    
+}

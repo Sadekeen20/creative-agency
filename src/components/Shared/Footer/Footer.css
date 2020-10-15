@@ -1,0 +1,14 @@
+.footer-area{
+    /* background-image: url(../../../images/footer-bg.png); */
+    background-color: #FBD062;
+   padding: 40px;
+}
+
+
+.text-center{
+    text-align: left;
+}
+.btn-brand{
+    background-color: #111430;
+    color: white;
+}
