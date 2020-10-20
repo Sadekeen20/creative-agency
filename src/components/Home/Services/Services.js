@@ -35,7 +35,7 @@ const Services = () => {
                 {
                     workItems.map(workItem =>
                         <Col md={3}  className="d-flex justify-content-center" style={{ marginBottom: '15px', textAlign: 'center', cursor: 'pointer' }} onClick={() => handleItem(workItem.title)}>
-                            <Card className="card-style p-3">
+                            <Card className="card-style pt-3">
                                 <Card.Img variant="top" className="rounded mx-auto d-block" src={cardImg} />
                                 <Card.Body>
                                     <Card.Title className="small"><h5>{workItem.title}</h5></Card.Title>

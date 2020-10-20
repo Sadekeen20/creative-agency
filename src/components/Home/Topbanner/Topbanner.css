@@ -1,11 +1,9 @@
 .bannerstyle{
     background-color: #FBD062;
-    height:450px;
-    
     color: #111430;
 }
 .bannerstyle img{
-    height:350px;
+    max-height:350px;
     opacity: .9;
     
 }

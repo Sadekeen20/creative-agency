@@ -33,8 +33,8 @@ const Login = () => {
             const  {displayName,email} = result.user;
             const signedInUser ={name:displayName,email};
             setLoggedInUser(signedInUser);
-            // storeAuthToken();
-            // history.replace(from);
+            storeAuthToken();
+            history.replace(from);
 
 
           }).catch(function(error) {
@@ -50,20 +50,21 @@ const Login = () => {
         firebase.auth().currentUser.getIdToken(/* forceRefresh */ true)
         .then(function(idToken) {
             // console.log(idToken);
-            sessionStorage.setItem('token',idToken);
+
+            sessionStorage.setItem('token',idToken); 
             history.replace(from);//redirect after token is set .
           }).catch(function(error) {
             // Handle error
           });
     }
     return (
-        <div className="App container-style" >
-            <Container>
+        <div className="App container-style container" >
+           
             <br/>
             <h2>Login</h2>
             <br/>
             <Button variant="dark" onClick={handleGoogleSignIn}>Sign In using Google</Button>
-            </Container>
+            
         </div>
     );
 };

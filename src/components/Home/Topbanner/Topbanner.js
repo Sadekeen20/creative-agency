@@ -9,7 +9,7 @@ const Topbanner = () => {
             <Container>
             <Navbar></Navbar>
             <Row>
-                <Col>
+                <Col md={6}>
                 <h2>
                 <b>
                 Lets Grow Your <br/>
@@ -21,9 +21,9 @@ const Topbanner = () => {
                 
                 <button className="btn btn-brand">Hire Us </button>
                 </Col>
-                <Col>
-                <img src={bannerImg} alt=""/>
-                </Col>
+                <Col md={6}>
+                <img src={bannerImg} alt="" className="img-fluid"/>
+                </Col >
             </Row>
             </Container>
         </div>

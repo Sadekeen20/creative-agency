@@ -13,7 +13,7 @@ const Ourworks = () => {
     return (
         <div className="banner">
             <h2>Here are some of <span className="text-success">our works</span></h2>
-            <Container className="banner">
+            <Container className="mt-5">
             <Carousel className="our-works"
                 plugins={[
                     'infinite',

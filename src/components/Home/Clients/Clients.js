@@ -12,10 +12,10 @@ const clients = () => {
             <Container>
                 <Row className="d-flex justify-content-center img-control mt-5 ">
 
-                    <Col md={2}>
+                    <Col md={3}>
                         <img src={slack} alt="" />
                     </Col>
-                    <Col md={1}> </Col>
+                    
                     <Col md={2}>
                         <img src={google} alt="" />
                     </Col>

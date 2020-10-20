@@ -12,18 +12,18 @@ const Sidebar = () => {
                 <li>
                     <img src={logo} alt="" className="logo-control"/>
                 </li>
-                <li>
-                    <Link to="" className="text-dark">
+                <li className="btn-disabled">
+                    <Link to="#" className="text-dark">
                         <FontAwesomeIcon icon={faShoppingCart} /> <span>order </span> 
                     </Link>
                 </li>
                 <li>
-                    <Link to="/order/dashboard" className="text-dark">
+                    <Link to="/orderdashboard" className="text-dark">
                         <FontAwesomeIcon icon={faCalendar} /> <span>Service list</span> 
                     </Link>
                 </li>
                 <li>
-                    <Link to="/order/review" className="text-dark">
+                    <Link to="/orderreview" className="text-dark">
                         <FontAwesomeIcon icon={faUsers} /> <span>Review</span>
                     </Link>
                 </li>
