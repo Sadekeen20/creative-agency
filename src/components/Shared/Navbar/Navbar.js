@@ -24,14 +24,14 @@ const Navbar = () => {
                     <li className="nav-item">
                         <a className="nav-link mr-5" href="#">Contact Us</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item mr-1">
                         <Link to="/login">
                         <button className="btn btn-brand">Login</button>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link to="/addService">
-                        <button className="btn btn-brand">Admin</button>
+                        <button className="btn btn-outline-dark">Admin</button>
                         </Link>
                     </li>
                 </ul>

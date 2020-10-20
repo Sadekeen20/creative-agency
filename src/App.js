@@ -46,15 +46,15 @@ function App() {
         <PrivateRoute path="/orderreview">
           <Orderreview></Orderreview>
         </PrivateRoute>
-        <Route path="/addService">
+        <PrivateRoute path="/addService">
             <Addservice></Addservice>
-          </Route>
-        <Route path="/servicelist">
+          </PrivateRoute>
+        <PrivateRoute path="/servicelist">
           <Servicelist></Servicelist>
-        </Route>
-        <Route path="/makeadmin">
+        </PrivateRoute>
+        <PrivateRoute path="/makeadmin">
           <Makeadmin></Makeadmin>
-        </Route>
+        </PrivateRoute>
         <Route exact path="/">
           <Home />
         </Route>

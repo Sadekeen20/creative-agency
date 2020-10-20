@@ -12,7 +12,8 @@ const Orderadd = () => {
     const handleOrder = () =>{
         const description=document.getElementById('description').value;
         const price = document.getElementById('price').value;
-        const newOrder = {...loggedInUser,worktitle,description, price};
+        const status = 'pending'
+        const newOrder = {...loggedInUser,worktitle,description, price,status};
        
         fetch('https://young-bastion-60344.herokuapp.com/addOrder', {
             method: 'POST',
@@ -35,11 +36,11 @@ const Orderadd = () => {
              <Form className="p-3">
                 <Form.Group controlId="formBasicEmail" className="p-5" style={{ border: '1px solid gray', borderRadius: '5px'}}>
                     <h1 style={{textAlign: 'center'}}>Register</h1>
-                    <Form.Control type="name" placeholder="Name/Company" defaultValue={loggedInUser.name} />
+                    <Form.Control type="name" placeholder="Name/Company" value={loggedInUser.name} />
                     <br/>
-                    <Form.Control type="email" placeholder="Enter email" defaultValue={loggedInUser.email} />
+                    <Form.Control type="email" placeholder="Enter email" value={loggedInUser.email} />
                     <br/>
-                    <Form.Control type="text" placeholder="worktitle" defaultValue={worktitle}/>
+                    <Form.Control type="text" placeholder="worktitle" value={worktitle}/>
                     <br/>
                     <Form.Control type="text" placeholder="Project Details" id="description"/>
                     <br/>

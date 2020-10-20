@@ -22,7 +22,7 @@ const Sidebaradmin = () => {
     return (
         <div>
             {isAdmin && <div className="sidebar d-flex flex-column justify-content-between col-md-2 py-5 px-4" style={{ height: "100vh" }}>
-                <h1>Welcome Admin</h1>
+                <h4>Admin</h4>
                 <ul className="list-unstyled">
                     <li>
                         <img src={logo} alt="" className="logo-control" />

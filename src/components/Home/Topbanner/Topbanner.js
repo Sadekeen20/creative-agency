@@ -5,7 +5,7 @@ import './Topbanner.css';
 import bannerImg from '../../../images/logos/Frame.png'
 const Topbanner = () => {
     return (
-        <div className="bannerstyle">
+        <div className="bannerstyle pb-3">
             <Container>
             <Navbar></Navbar>
             <Row>
