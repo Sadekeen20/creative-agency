@@ -27,18 +27,18 @@ const Orderdashboard = () => {
                 <Col md={3}>
                     <Sidebar></Sidebar>
                 </Col>
-                <Col md={8}>
-                    <h1>Helloo Dash</h1>
+                <Col md={9}>
+                    
                     <Row>
-                        {bookings.map(book => <Col md={4}>
-                            <Row className="">
+                        {bookings.map(book => <Col md={4} className="m-1 p-2">
+                            <Row style={{border: '1px solid gray', minHeight:'80px'}}>
                                 <Col md={6}>
-                                    <img src={contentImg} alt="" className="img-control" />
+                                    <img src={contentImg} alt="" className="img-fluid" style={{maxHeight:'50px' ,maxWidth:'50px'}}/>
                                 </Col>
                                 <Col md={6}>
-                                    <h4>{book.worktitle} </h4>
-                                    <h5>{book.description}</h5>
-                                    <h6 className="text-muted">{book.price}</h6>
+                                    <h6>Title: {book.worktitle} </h6>
+                                    <small>Description: {book.description}</small>
+                                    <p className="text-muted">Price: {book.price}</p>
                                 </Col>
                             </Row>
                         </Col>)

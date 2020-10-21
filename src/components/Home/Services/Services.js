@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { Button, Card, Col, Container, FormControl, Row } from 'react-bootstrap';
 import './Services.css'
-import cardImg from '../../../images/icons/service1.png'
+
 const Services = () => {
     const history = useHistory();
     const handleItem = (title) => {
@@ -36,9 +36,11 @@ const Services = () => {
 
     // ]
     return (
-        <div className=" container ">
-            
-            <div className="row d-flex justify-content-center">
+        <div className=" container App">  
+        
+        <h2 className="text-brand">Provide Awesome<span className="text-success">Services</span></h2>
+        <br/> <br/>           
+            <div className="row d-flex justify-content-center mb-5">
                 
                 {
                     service.map(workItem =>
